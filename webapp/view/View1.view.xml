@@ -1,0 +1,264 @@
+<mvc:View controllerName="kpmg.datos.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+
+		<IconTabBar
+			id="iconTabBar2"
+			headerMode="Inline"
+			class="sapUiResponsiveContentPadding">
+			<items>
+				<IconTabFilter
+					icon="sap-icon://employee"
+					key="info"
+					text="Proveedor"
+					>
+					
+					<f:Form id="FormChange354wideDual"
+						editable="true">
+						<f:title>
+							<core:Title text="Datos Principales" />
+						</f:title>
+						<f:layout>
+							<f:ColumnLayout 
+								columnsM="2"
+								columnsL="2"
+								columnsXL="2"
+							/>
+							<!-- <f:ResponsiveGridLayout
+								labelSpanXL="4"
+								labelSpanL="3"
+								labelSpanM="4"
+								labelSpanS="12"
+								adjustLabelSpan="false"
+								emptySpanXL="0"
+								emptySpanL="4"
+								emptySpanM="0"
+								emptySpanS="0"
+								columnsXL="2"
+								columnsL="2"
+								columnsM="2"
+								singleContainerFullSize="false" /> -->
+						</f:layout>
+						<f:formContainers>
+							<f:FormContainer >
+								<f:formElements>
+
+									<f:FormElement label="Sociedad">
+										<f:fields>
+											<Select id="country1" selectedKey="{Country}" enabled="false">
+												<items>
+													<core:Item text="KPMG" key="England"/>
+													<core:Item text="Germany" key="Germany"/>
+													<core:Item text="USA" key="USA"/>
+												</items>
+											</Select>
+										</f:fields>
+									</f:FormElement>
+
+									<f:FormElement label="Tipo de Identificación">
+										<f:fields>
+											<!-- <Select  selectedKey="{Country}" enabled="false">
+												<items>
+													<core:Item text="KPMG" key="England"/>
+													<core:Item text="Germany" key="Germany"/>
+													<core:Item text="USA" key="USA"/>
+												</items>
+											</Select> -->
+											<Input ></Input>
+										</f:fields>
+									</f:FormElement>
+									<f:FormElement label="País">
+										<f:fields>
+											<Select  selectedKey="{Country}"  enabled="false">
+												<items>
+													<core:Item text="" key=""/>
+													<core:Item text="" key="Germany"/>
+													<core:Item text="" key="USA"/>
+												</items>
+											</Select>
+
+										</f:fields>
+									</f:FormElement>
+
+									<f:FormElement label="Número de Identificación">
+										<f:fields>
+										<Input ></Input>
+											<!-- <Select  selectedKey="{Country}"  enabled="false">
+												<items>
+													<core:Item text="" key=""/>
+													<core:Item text="" key="Germany"/>
+													<core:Item text="" key="USA"/>
+												</items>
+											</Select> -->
+
+										</f:fields>
+									</f:FormElement>
+								</f:formElements>
+							</f:FormContainer>		
+						</f:formContainers>
+					</f:Form>
+					<Panel expandable="true" width="auto" class="sapUiSmallMarginTop" expanded="true">
+						<headerToolbar>
+							<OverflowToolbar style="Clear">
+								<Title text="Tratamiento" />
+								<ToolbarSpacer />
+								<!-- <Button icon="sap-icon://settings" />
+								<Button icon="sap-icon://drop-down-list" /> -->
+							</OverflowToolbar>
+						</headerToolbar>
+						<content>
+							<SegmentedButton selectedKey="Empresa" enabled="false" width="45rem">
+								<items>
+									<SegmentedButtonItem text="Señora"  />
+									<SegmentedButtonItem text="Señor" />
+									<SegmentedButtonItem text="Empresa" key="Empresa" />
+									<SegmentedButtonItem text="Señor y Señora" />
+									<SegmentedButtonItem text="Señorita" />
+								</items>
+							</SegmentedButton>
+							<f:Form 
+								editable="true">
+								<!-- <f:title>
+									<core:Title text="Datos Principales" />
+								</f:title> -->
+								<f:layout>
+									<f:ResponsiveGridLayout
+								labelSpanXL="2"
+								labelSpanL="2"
+								labelSpanM="2"
+								labelSpanS="12"
+								adjustLabelSpan="false"
+								emptySpanXL="3"
+								emptySpanL="3"
+								emptySpanM="0"
+								emptySpanS="0"
+								columnsXL="1"
+								columnsL="1"
+								columnsM="1"
+								singleContainerFullSize="false" />
+									<!-- <f:ColumnLayout 
+										columnsM="1"
+										columnsL="1"
+										columnsXL="1"
+									/> -->
+				
+								</f:layout>
+								<f:formContainers>
+									<f:FormContainer >
+										<f:formElements>
+
+											<f:FormElement label="Razón Social/Nombre">
+												<f:fields>
+													<Input ></Input>
+													<!-- <Select  selectedKey="{Country}" enabled="false">
+														<items>
+															<core:Item text="KPMG" key="England"/>
+															<core:Item text="Germany" key="Germany"/>
+															<core:Item text="USA" key="USA"/>
+														</items>
+													</Select> -->
+												</f:fields>
+											</f:FormElement>
+
+											<f:FormElement label="Representante Legal">
+												<f:fields>
+													<Input ></Input>
+													<!-- <Select  selectedKey="{Country}" enabled="false">
+														<items>
+															<core:Item text="KPMG" key="England"/>
+															<core:Item text="Germany" key="Germany"/>
+															<core:Item text="USA" key="USA"/>
+														</items>
+													</Select> -->
+												</f:fields>
+											</f:FormElement>
+											<f:FormElement label="Area de Atención">
+												<f:fields>
+													<Select  selectedKey="{Country}"  enabled="false">
+														<items>
+															<core:Item text="" key=""/>
+															<core:Item text="" key="Germany"/>
+															<core:Item text="" key="USA"/>
+														</items>
+													</Select>
+
+												</f:fields>
+											</f:FormElement>
+										</f:formElements>
+									</f:FormContainer>		
+								</f:formContainers>
+							</f:Form>	
+						</content>
+					</Panel>
+					
+					<Table 
+						class="sapUiSmallMarginTop"
+						mode="MultiSelect"
+						sticky="ColumnHeaders,HeaderToolbar"
+						inset="false"
+						growing="true"
+						width="auto">
+						<headerToolbar>
+							<OverflowToolbar>
+								<Title text="Telefonos de Contacto"  />
+								<ToolbarSpacer/>
+								<Button icon="sap-icon://add" type="Emphasized"/>
+								<Button icon="sap-icon://delete" type="Negative"/>
+							</OverflowToolbar>
+						</headerToolbar>
+						<columns>
+							<Column>
+								<Text text="Pais" />
+							</Column>
+							<Column minScreenWidth="Desktop" demandPopin="true" hAlign="Center">
+									<Text text="Telefono"/>
+								</Column>
+
+							<Column minScreenWidth="Desktop" demandPopin="true" hAlign="Center">
+								<Text text="Extensión" />
+							</Column>
+							<Column	hAlign="Center">
+								<Text text="Principal" />
+							</Column>
+							<Column	hAlign="Center">
+								<Text text="Persona Contacto" />
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem type="Navigation" press="onListItemPress" vAlign="Middle"> 
+								 <cells> 
+								 	<Text text="Perú"></Text>
+									<Text text="944225811"></Text>
+									<Text text="-"></Text>
+									<Text text="-"></Text>
+									<Text text="Christian Vargas"></Text>
+									<!-- <ObjectIdentifier title="{products>Name}" text="{products>ProductId}" />
+									<ObjectIdentifier text="{products>Quantity}" />
+									<ObjectIdentifier text="{products>Description}" />
+									<ObjectNumber
+											number="{
+												parts:[{path:'products>Price'},{path:'products>CurrencyCode'}],
+												type: 'sap.ui.model.type.Currency',
+												formatOptions: {showMeasure: false}
+											}"
+											unit="{products>CurrencyCode}" /> -->
+								</cells>
+							</ColumnListItem> 
+
+						</items>
+					</Table>
+					
+				</IconTabFilter>
+				
+			</items>
+		</IconTabBar>
+
+        
+
+		
+    </Page>
+</mvc:View>
